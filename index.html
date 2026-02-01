@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For plb 💖</title>
+  <style>
+    body {
+      font-family: Comic Sans MS, cursive;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      text-align: center;
+      color: #5a2a2a;
+    }
+    .story {
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 18px;
+    }
+    img {
+      width: 220px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    #yes { background: #ff4d6d; color: white; }
+    #no { background: #444; color: white; position: relative; }
+    #finalMessage {
+      display: none;
+      font-size: 22px;
+      margin-top: 20px;
+      color: #b3003c;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Hey plb… this is our story 💌</h1>
+
+<div class="story">
+It’s funny how our story started…  
+First, I thought you were kinda creepy 🙄  
+Then we became friends…  
+Then best friends…  
+And somewhere between all the laughs and late talks… I fell in love ❤️  
+
+<br><br>
+I liked you from the beginning, but on <b>7th August 2025</b>, I finally told you.  
+And look at us now…  
+
+<br><br>
+One year of knowing each other.  
+Six months of loving each other.  
+And forever still waiting for us ✨
+</div>
+
+<img src="https://i.postimg.cc/RF6PkVNV/photo1.jpg">
+<img src="https://i.postimg.cc/cLBPhH8b/photo2.jpg">
+
+<h2>So… will you always be my Valentine, plb? 💖</h2>
+
+<button id="yes">Yes, always 💘</button>
+<button id="no">No 😢</button>
+
+<div id="finalMessage">
+YAYYYY!!! You’re my favorite person, my safest place, and my best decision ever 🥹💞
+</div>
+
+<audio autoplay loop>
+  <source src="https://files.catbox.moe/0ntr4q.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const noBtn = document.getElementById("no");
+const yesBtn = document.getElementById("yes");
+const finalMessage = document.getElementById("finalMessage");
+
+noBtn.addEventListener("mouseover", () => {
+  const x = Math.random() * 200 - 100;
+  const y = Math.random() * 200 - 100;
+  noBtn.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+yesBtn.addEventListener("click", () => {
+  finalMessage.style.display = "block";
+});
+</script>
+
+</body>
+</html>
